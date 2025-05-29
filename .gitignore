@@ -1,0 +1,7 @@
+# Ignorar la carpeta de entorno virtual
+env/
+notas_medicas/
+# Otras cosas que quieras ignorar
+.vscode/
+*.pyc
+__pycache__/
