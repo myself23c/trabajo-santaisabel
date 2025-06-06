@@ -40,7 +40,7 @@ template_path = 'plantillas/HISTORIA_CLINICA_PARA_PLANTILLA_V1.docx'
 # 7. Crear documentos
 for _, row in df_filtrado.iterrows():
     context = {
-        'nombres': row.get('nombre', 'vacío'),
+        'nombres': row.get('nombres', 'vacío'),
         'apellido_paterno': row.get('apellido_paterno', 'vacío'),
         'apellido_materno': row.get('apellido_materno', 'vacío'),
         'edad': row.get('edad', 'vacío'),

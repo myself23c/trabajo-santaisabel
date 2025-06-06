@@ -25,6 +25,11 @@ def get_prevention_data():
         ['desnutricion', 'bajo-peso' , 'peso-normal', 'sobrepeso', 'obesidad']
     )
 
+    prevention_data['caries'] = validate_input(
+        "viene por caries dental? (nocaries/concaries): ",
+        ['nocaries', 'concaries']
+    )
+     
     prevention_data['febril'] = validate_input(
         "hay sospecha de sindrome febril? (nofebril/sindromefebril): ",
         ['nofebril', 'sindromefebril']

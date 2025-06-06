@@ -16,7 +16,10 @@ scripts = [
     'generar_suive_valores.py',
     'consultas_diarias_por_dia.py',
     'generar_hojadiaria_excel_por_fecha.py',
-    'generar_dumpeo_csv_a_excel_fecha.py'
+    'generar_dumpeo_csv_a_excel_fecha.py',
+    'generar_conteo_de_pacientes_padecimientos.py',
+    'generar_dias_sin_consulta_y_consultas_por_dia.py',
+
 ]
 
 

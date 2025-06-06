@@ -1,0 +1,27 @@
+[
+    {
+        "date": "31/05/2025",
+        "text": "este es mi priemer recordatorio",
+        "days": 3
+    },
+    {
+        "date": "20/06/2025",
+        "text": "enviar informacion de farmacia a lliteras",
+        "days": 7
+    },
+    {
+        "date": "31/05/2025",
+        "text": "este es mi segundo recordatorio para ir probando la aplicacion",
+        "days": 3
+    },
+    {
+        "date": "05/06/2025",
+        "text": "ENTREGA DE SIMBA",
+        "days": 1
+    },
+    {
+        "date": "03/06/2025",
+        "text": "DIA ANTERIOR A ENTREGA DE SIMBA",
+        "days": 1
+    }
+]

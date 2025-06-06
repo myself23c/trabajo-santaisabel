@@ -64,7 +64,7 @@ def main():
         'referido', 'deteccion_adicciones', 'deteccion_violencia_mujer',
         'prueba_edi', 'resultado_edi', 'resultado_battelle', 'eda_tratamiento',
         'ira_tratamiento', 'aplicacion_cedula_cancer_ano',
-        'INTERVENCIONES GERONTOLOGICAS', 'alergia', 'CHISME', 'telefono',
+        'INTERVENCIONES_GERONTOLOGICAS', 'alergia', 'CHISME', 'telefono',
         'febril', 'embarazada'
     ]
 

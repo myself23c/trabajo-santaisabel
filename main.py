@@ -13,17 +13,26 @@ enhanced_menu_items = [
     {"label": "> Generar nota medica",    "type": "file",    "target": "test_generar_nota_acciones.py"},
     {"label": "> Generar Receta PDF",               "type": "file",    "target": "test_receta_pdf.py"},
     {"label": "> Imprimir Ubuntu receta y nota medica ala vez",          "type": "file",    "target": "imprimir-ubuntu.py"},
-    {"label": "Generar Solicitud LABs",            "type": "file",    "target": "test_solicitud_laboratorios.py"},
-    {"label": "Generar Solicitud Imagenología",   "type": "file",    "target": "test-solicitud-imagenologia.py"},
-    {"label": "Generar historia clinica",   "type": "file",    "target": "generar_historia_clinica.py"},
-    {"label": "Imprimir un único archivo generado","type": "file",    "target": "imprimir_unico_archivo.py"},
-    {"label": ">submenu< generador de Hojas Diarias",            "type": "submenu","module": "sources.generar_hojas_diarias.test_hojas_diarias_main","func": "main_menu"},
+    {"label": "-+Generar consulta *subcecuente* o de *evolucion*",            "type": "file",    "target": "crear_nueva_consulta_subsecuente_fake.py"},
+    {"label": "-Generar Solicitud LABs",            "type": "file",    "target": "test_solicitud_laboratorios.py"},
+    {"label": "-Generar Solicitud Imagenología",   "type": "file",    "target": "test-solicitud-imagenologia.py"},
+    {"label": "-Generar historia clinica",   "type": "file",    "target": "generar_historia_clinica.py"},
+    {"label": "-Imprimir un único archivo generado","type": "file",    "target": "imprimir_unico_archivo.py"},
+    {"label": "[TODOS]>submenu< Imprimir papeleria formatos en blanco exp,enfermeria etc.",   "type": "file",    "target": "imprimir_formatos_en_blanco_papeleria.py"},
+    {"label": "[TODOS]>submenu< buscar expedientes csv +numero de exp, apellidos de la familia, etc","type": "file",    "target": "buscar_expedientes_csv.py"},
+    {"label": ">submenu< generador de Hojas Diarias del doctor juan",            "type": "submenu","module": "sources.generar_hojas_diarias.test_hojas_diarias_main","func": "main_menu"},
      {
-        "label": ">submenu< Buscador Pacientes e informacion",
+        "label": ">submenu< Buscador Pacientes e informacion del doctor juan",
         "type":   "submenu",
         "module": "sources.buscador_pacientes.buscador_pacientes_main",
         "func":   "main_menu"
     },
+    
+    {"label": "[TODOS]+DETECCIONES+ Ver lista de pacientes ID por fecha y sexo",   "type": "file",    "target": "detecciones_lista_id.py"},
+    {"label": "[TODOS]+DETECCIONES+ Generar detecciones unicas en el año de un paciente",   "type": "file",    "target": "detecciones_generador.py"},
+    {"label": "[TODOS]+DETECCIONES+ Imprimir detecciones",   "type": "file",    "target": "imprimir_detecciones.py"},
+    {"label": "*Acceso a la base de datos",   "type": "file",    "target": "sources/conecciones_a_csv/main.py"},
+    {"label": "Recordatorios de informacion por fecha",   "type": "file",    "target": "sources/utilidades/menu_recordatorios.py"},
     
 ]
 
@@ -89,7 +98,7 @@ def main_menu(stdscr):
                 menu_win.addstr(y, x, label)
 
         # Pie de página
-        footer = "Mi App Interactiva - v1.0"
+        footer = "Mi App de consulta de santa isabel dr.munoz"
         stdscr.attron(curses.color_pair(3))
         stdscr.addstr(h-2, w//2 - len(footer)//2, footer)
         stdscr.attroff(curses.color_pair(3))

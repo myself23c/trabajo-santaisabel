@@ -54,7 +54,7 @@ def generar_acciones_por_edad_y_sexo(edad_str, sexo_str):
         elif edad <= 19:
             return "se instruye sobre prevención de adicciones y accidentes;se  revisa cartilla de salud y prevencion de embarazos no deseados"
         else:
-            return ("Detección de cáncer cervicouterino y de mama; instruir auto-exploración y preparación "
+            return ("Sse comenta de la importancia de deetección de cáncer cervicouterino y de mama; instruir auto-exploración y preparación "
                     "para Papanicolaou, control de peso y prevención de accidentes.")
     return "Datos insuficientes"
 

@@ -1,6 +1,7 @@
 # Ignorar la carpeta de entorno virtual
 env/
 notas_medicas/
+detecciones_generadas/
 # Otras cosas que quieras ignorar
 .vscode/
 *.pyc
